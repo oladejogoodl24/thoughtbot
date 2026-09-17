@@ -1,296 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoughtbot Blog Clone</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <title>ThoughtBot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42c74a268e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="header container-fluid">
 
-   
-    <header class="navbar">
-        <div class="logo">
-            <h2>thoughtbot</h2>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Industries</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#" class="active">Blog</a></li>
-            </ul>
+        <img src="WhatsApp Image 2026-09-17 at 02.11.43.jpeg" alt="thought bot logo">
+        <nav class="nav">
+            <a class="services" href="#">Services<i class="fa-solid fa-chevron-down"></i></a>
+            <a class="industries" href="#">Industries<i class="fa-solid fa-chevron-down"></i></a>
+            <a class="case" href="#">Case Studies</a>
+            <a class="resourse" href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
+            <a class="blog" href="#"><span>Blog</span></a>
         </nav>
-
-        <button class="cta-btn">Let's get started!</button>
+        <button class="butin">Let's get started !</button>
     </header>
-
-   
-    <section class="hero">
-        <h1>Giant Robots Smashing <br> Into Other Giant Robots</h1>
-
-        <p>
-            Written by <span>thoughtbot</span>, your expert partner
-            for design and development.
-        </p>
-        <p>i know u</p>
-    </section>
-
-
-    <section class="topics">
-        <button class="active-topic">All Topics</button>
-        <button>Design</button>
-        <button>Development</button>
-        <button>Product</button>
-        <a href="#">More topics</a>
-    </section>
-
-
-    <section class="blog-container">
-
-        <article class="blog-card">
-            <h2>The Four Signals of AI Observability</h2>
-            <p>
-                Treat your AI feature like a software you can watch,
-                not a model you hope works.
-            </p>
-
-            <div class="author">
-                Matheus Sales – June 1, 2026
-            </div>
-
-            <div class="tags">
-                AI, LLM, OBSERVABILITY, DEVELOPMENT
-            </div>
-        </article>
-
-       
-
-        <div class="newsletter">
-            <div>
-                <h2>Sign up to receive a weekly recap from thoughtbot</h2>
-
-                <input
-                    type="email"
-                    placeholder="Your email address"
-                >
-            </div>
-
-            <button>Subscribe</button>
+    <main class="main">
+        <h1>Giant Robots Smashing Into <br>Other Giant Robots</h1><br>
+        <p>Written by <span class="pan">thoughtbot</span>, your expert partner for design <br>and development.</p>
+        <div class="line"></div>
+        <nav class="nav2">
+                <button class="all">All Topics</button>
+                <button class="design">Design</button>
+                <button class="development">Development</button>
+                <button class="product">Product</button>
+                <a class="more-topic" href="#">More topics</a>
+        </nav>
+        <div class="play">
+            <a href="#" class="span">The Playwright debugging tool Rails devs <br>aren't using</a>
+            <p>Playwright records every test in cinematic detail. Most Rails devs aren’t watching.<br>
+<span class="span">Justin Toniazzo</span>  June 19, 2026</p>
+            <b><span class="spans">RAILS</span>, <span class="spans">TESTING</span>, <span class="spans">CAPYBARA</span>, <span class="spans">RSPEC</span>, <span class="spans">DEBUGGING</span>, <span class="spans">CI</span></b>
         </div>
-
-        <div class="feeds">
-            <p>Looking for even more ways to stay connected?</p>
-            <a href="#">Check out our feeds →</a>
+        <div class="mail">
+            <h2 class="head2">Sign up to receive a weekly recap <br>from thoughtbot</h2>
+            <label for="email" class="ail">Your email address</label><br>
+            <input type="text" class="email">
+            <button class="subscribe">Subscribe</button>
         </div>
-
-        <article class="blog-card">
-            <h2>
-                Can you really launch a tech business with a no-code app builder?
-            </h2>
-
-            <p>
-                AI app builders promise to turn anyone into a founder overnight,
-                but is the code actually production-ready?
-            </p>
-
-            <div class="author">
-                Michelle Taute – May 29, 2026
+        <div class="check-out">
+            <div class="check1"><small>Looking for even more ways to stay connected?</small></div>
+            <div class="check2">
+                <div class=""><i class="fa-solid fa-wifi"></i></div><div class="che">Check out<br>our feeds</div><i class="fa-solid fa-arrow-right-long"></i></div>
             </div>
-
-            <div class="tags">
-                AI, AI DESIGN, PRODUCT STRATEGY
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Giant Robots Podcast Ep 612: Do fish drink?</h2>
-
-            <p>
-                The Giant Robots trio are back to discuss development,
-                AI and software engineering.
-            </p>
-
-            <div class="author">
-                Chad Pytel – May 28, 2026
-            </div>
-
-            <div class="tags">
-                PODCAST
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>This week in #dev (May 15, 2026)</h2>
-
-            <p>
-                Highlights of what happened in our #dev channel this week.
-            </p>
-
-            <div class="author">
-                thoughtbot – May 28, 2026
-            </div>
-
-            <div class="tags">
-                CSS, TIL, TIP, JAVASCRIPT
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Lost, forgotten, and unfamiliar HTML</h2>
-
-            <p>
-                Automated scans taught me about some web stuff
-                I forgot or never knew.
-            </p>
-
-            <div class="author">
-                Dave Iverson – May 27, 2026
-            </div>
-            <div class="tags">
-                WEB, ACCESSIBILITY
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Why Duck Typer?</h2>
-
-            <p>
-                Some say interface tests are fragile and shouldn't
-                be written.
-            </p>
-
-            <div class="author">
-                Thiago Araújo Silva – May 26, 2026
-            </div>
-
-            <div class="tags">
-                RUBY, TESTING, OPEN SOURCE
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Biometrics authentication for your mobile app</h2>
-
-            <p>
-                Practical approaches to add biometrics authentication
-                to a mobile app.
-            </p>
-
-            <div class="author">
-                Rakesh Arunachalam – May 25, 2026
-            </div>
-
-            <div class="tags">
-                REACT NATIVE, IOS, ANDROID
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Claude Code + Figma for non-technical designers</h2>
-
-            <p>
-                Moving from Figma to Claude Code and back again
-                is now possible.
-            </p>
-
-            <div class="author">
-                Ferdia Kenny – May 22, 2026
-            </div>
-
-            <div class="tags">
-                AI, DESIGN, PRODUCT DESIGN
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Why thoughtbot is joining the Ruby Alliance</h2>
-
-            <p>
-                Here's why we believe shared stewardship matters
-                for Ruby's future.
-            </p>
-
-            <div class="author">
-                Chad Pytel – May 20, 2026
-            </div>
-
-            <div class="tags">
-                RUBY, OPEN SOURCE, COMMUNITY
-            </div>
-        </article>
-
-        <article class="blog-card">
-            <h2>Summer Special: We're Taking London Tech Leaders Outdoors</h2>
-
-            <p>
-                Relaxed meetup gatherings across London's best
-                outdoor venues.
-            </p>
-
-            <div class="author">
-                Chad Pytel – May 19, 2026
-            </div>
-
-            <div class="tags">
-                EVENTS, COMMUNITY
-            </div>
-        </article>
-
-    </section>
-
-  
-
-    <div class="pagination">
-        <a href="#" class="current">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">Next ></a>
-        <a href="#">Last »</a>
-    </div>
-
-  
-    <footer>
-
-        <div class="footer-logo">
-            <h2>thoughtbot</h2>
         </div>
-
-        <div class="footer-links">
-
-            <div>
-                <a href="#">Services</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Resources</a>
-                <a href="#">Let's Talk</a>
+        <article class="word">
+            <div class="w word1">
+                <h2 class="spans">Giant Robots Podcast Ep 614: AI Code Audits</h2>
+                <p>Our hosts Chad and Sami team up this week to discuss AI code bases and whether<br> they can be built to be developer friendly and with best practices in mind.</p>
+                <small><span class="span">Chad Pytel</span> and <span class="span">Sami Birnbaum</span> - June 18, 2026</small><br>
+                <b class="spans">PODCAST</b>
             </div>
-
-            <div>
-                <a href="#">Our Company</a>
-                <a href="#">Careers</a>
-                <a href="#">Purpose</a>
-                <a href="#">Blog</a>
-                <a href="#">Events</a>
+            <div class="w word2">
+                <h2 class="spans">Meet thoughtbot at Brighton Ruby 2026</h2>
+                <p>Brighton Ruby 2026 will take place in two weeks, thoughtbot will be attending and speaking, let’s meet!</p>
+                <small><span class="span">Rémy Hannequin</span> - June 18, 2026</small><br>
+                <b><span class="spans">Conferences</span>, <span class="spans">Ruby</span>, <span class="spans">Ruby On Rails</span>, <span class="spans">Brighton</span></b>
             </div>
-
-            <div>
-                <a href="#">Mastodon</a>
-                <a href="#">GitHub</a>
-                <a href="#">YouTube</a>
-                <a href="#">Twitch</a>
+            <div class="w word3">
+                <h2 class="spans">The mistake I didn't realise I was making when designing workshops</h2>
+                <p>The hidden reason good products, meetings and workshops still fail: they depend on a single way of seeing, thinking and processing.</p>
+                <small><span class="span">Bethan Ashley</span> - June 17, 2026</small><br>
+                <b><span class="spans">Product Management</span>, <span class="spans">Product Strategy</span>, <span class="spans">Workshops</span>, <span class="spans">Conferences</span>, <span class="spans">Design</span>, <span class="spans">Design Thinking</span></b>
             </div>
-
+            <div class="w word4">
+                <h2 class="spans">The Bike Shed Ep 502: Apps That Make Our Work Go</h2>
+                <p>Aji and Sally are back together again, this time to discuss the different apps they use to make their workflows and To Do lists easier and quicker to achieve.</p>
+                <small><span class="span">Joël Quenneville</span> and <span class="span">Sally Hall</span> - June 16, 2026</small><br>
+                <b>Podcast</b>
+            </div>
+            <div class="w word5">
+                <h2 class="spans">AI crawlers are inflating your view counts</h2>
+                <p>AI crawlers now make up most of your site’s traffic, and server-side analytics counts every one of them. Your view counts measure scrapers, not readers. Here is how to fix it.</p>
+                <small><span class="span">Trésor Bireke</span>  June 16, 2026</small><br>
+                <b><span class="spans">AI</span>, <span class="spans">Rails</span>, <span class="spans">Analytics</span></b>
+            </div>
+            <div class="w word6">
+                <h2 class="spans">Toast: the 2-minute test that reveals how you think about building products</h2>
+                <p>Give a team one prompt. Watch them completely diverge. The differences reveal something most product teams never talk about.</p>
+                <small><span class="span">Bethan Ashley</span> - June 10, 2026</small><br>
+                <b><span class="spans">Design Thinking</span>, <span class="spans">Product Management</span>, <span class="spans">Teams</span>, <span class="spans">Mentoring</span></b>
+            </div>
+            <div class="w word7">
+                <h2 class="spans">How I Built a Chrome Extension Wrapper (and Everything That Tried to Stop Me)</h2>
+                <p>Sharing my experience building a Chrome extension wrapper around a Rails app: the hard-won expertise, the rabbit holes, and everything I’d do differently.</p>
+                <small><span class="span">Valeria Graffeo</span> - June 9, 2026</small><br>
+                <b><span class="spans">Development</span>, <span class="spans">Chrome Extension</span>, <span class="spans">Rails</span></b>
+            </div>
+            <div class="w word8">
+                <h2 class="spans">Enforcing Your Ruby Style Guide on AI-Generated Code</h2>
+                <p>A Rails-flavored guide to wrapping Claude Code in the checks, conventions, and feedback loops that make agent output more trustworthy.</p>
+                <small><span class="span">Daniel Garcia</span> - June 8, 2026</small>
+                <b><span class="spans">Claude Code</span>, <span class="spans">Claude</span>, <span class="spans">AI</span>, <span class="spans">Artificial Intelligence</span>, <span class="spans">Ruby On Rails</span>, <span class="spans">Rails</span>, <span class="spans">Development</span></b>
+            </div>
+            <div class="w word9">
+                <h2 class="spans">Copy as Markdown: AI-friendly blog posts</h2>
+                <p>Our blog posts can now be copied as Markdown, so you can hand them to your favourite AI without the HTML cruft. Click, paste, and happy contexting.</p>
+                <small><span class="span">Jared Turner</span> - June 3, 2026</small><br>
+                <b><span class="spans">AI</span>, <span class="spans">Markdown</span></b>
+            </div>
+            <nav class="tag">
+                <span class="q one">1</span>
+                <a class="q two" href="#">2</a>
+                <a class="q three" href="#">3</a>
+                <a class="q four" href="#">4</a>
+                <a class="q five" href="#">5</a>
+                <span class="q six">...</span>
+                <a class="q seven" href="#">Next <i class="fa-solid fa-angle-right"></i></a>
+                <a class="q eight" href="#">Last <i class="fa-solid fa-angles-right"></i></a>
+            </nav>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="foot foot1">
+            <img src="WhatsApp Image 2026-09-17 at 02.11.44.jpeg" alt="thoughtbot">
+            <small>© 2026 thoughtbot, inc.<br>
+The design of a robot and thoughtbot are registered trademarks of <br>thoughtbot, inc.</small>
         </div>
-
-        <p class="copyright">
-            © 2026 thoughtbot, inc.
-        </p>
-
+        <div class=" foot foot2">
+            <a class="cas cas1" href="#">
+<span class="serv">Services</span><br>
+<span class="stud">Case Studies</span><br>
+<span class="reso">Resources</span><br>
+<span class="talk">Let's Talk</span><br>
+            </a>
+            <a class="cas cas2" href="#">
+<span class="comp">Our Company</span><br>
+<span class="care">Careers</span><br>
+<span class="purp">Purpose</span><br>
+<span class="blog">Blog</span><br>
+<span class="even">Events</span><br>
+<span class="spon">Sponsor</span><br>
+<span class="stor">Store</span><br>
+            </a>
+            <a class="cas cas3" href="#">
+<span class="mast">Mastodon</span><br>
+<span class="blue">Bluesky</span><br>
+<span class="gith">GitHub</span><br>
+<span class="yout">YouTube</span><br>
+<span class="twit">Twitch</span><br>
+<span class="feed">Feeds</span><br>
+            </a>
+            <small><span class="ost">US: +1 (877) 9-ROBOTS</span> <span class="ond">UK: +44 (0)20 3807 0560</span><br>
+<Span class="ord">Code of Conduct</Span> <span class="oth">Accessibility</span> <span class="ath">Statement Privacy Policy</span></small>
+        </div>
     </footer>
-
 </body>
 </html>
